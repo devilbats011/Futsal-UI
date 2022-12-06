@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futsal</title>
   </head>
   <body>
     <div id="app">
       <!-- As a heading -->
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <span class="navbar-brand mb-0 h1 text-light"> Futsal </span>
         </div>
       </nav>
+      <main class="container py-5">
+        <article>
+          <h1 class="fs-4 mb-5"><u>FUTSAL COURTS </u></h1>
+        </article>
+
+        <div
+          id="futsal-court-container"
+          class="row row-cols-1 row-cols-md-2 g-4"
+        >
+          <section class="col futsal-court ">
+            <div class="card ps-5">
+              <img
+                src="./images/court-field.png"
+                class="card-img-top mt-3"
+                style="width: 18rem"
+                alt="..."
+              />
+              <div class="card-body">
+                <h2 class="card-title">COURT 1</h2>
+                <p class="card-text"></p>
+                <a href="booking" class="btn btn-primary">BOOK</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
