@@ -8,36 +8,105 @@
   </head>
   <body>
     <div id="app">
-      <!-- As a heading -->
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-          <span class="navbar-brand mb-0 h1 text-light"> Futsal </span>
-        </div>
-      </nav>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-light vh-25">
+          <!-- style="height: 8vh; -->
+          <div class="container-fluid mx-3  ">
+            <a class="navbar-brand" href="#">Futsal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              </ul> -->
+              <ul class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
+   
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Log In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Log Out</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+         
+                <li class="nav-item">
+                  <!-- <button class="btn btn-outline-success nav-link active" aria-current="page" href="#">Home</button> -->
+                  <button class="btn py-1 px-3 mt-lg-1 ms-lg-3 btn-outline-primary " type="submit">Home</button>
+                </li>
+
+              </ul>
+        
+            </div>
+          </div>
+        </nav>
+      </header>
+
       <main class="container py-5">
+        
         <article>
-          <h1 class="fs-4 mb-5"><u>FUTSAL COURTS </u></h1>
+  
+          <!-- this jumbotron for login User only if annoymous this jumbotron not show -->
+          <div class="jumbotron jumbotron-fluid bg-light py-4 mb-4">
+            <div class="container">
+              <h1 class="fs-4">Welcome, Username012# </h1>  
+              <p class="mb-3"><small class="text-muted">last Log In : 11/11/22</small></p>
+              <p class="lead">🥳 🎉  &nbsp; Enjoy <b>FREE 1 Hour</b> Court For Every 5 Hours Booked ! </p>
+              <section class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title mb-4"><span class="text-primary">Free</span> Hours Court Benefit</h5>
+                    <p class="card-text"> Total Hour Book: 0 </p>
+                    <p class="card-text"> Unclaim Hours: 0 </p>
+                    <p class="card-text"> Claimed Hours: 0 </p>
+                  </div>
+                </div>
+                <!-- <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div> -->
+              </section>
+
+
+              
+            </div>
+          </div>
         </article>
 
-        <div
+        <div class="bg-light p-3">
+          <h1 class="fs-4 pb-3"><u>FUTSAL COURTS </u></h1> 
+          <div
           id="futsal-court-container"
           class="row row-cols-1 row-cols-md-2 g-4"
-        >
-          <section class="col futsal-court ">
-            <div class="card ps-5">
-              <img
-                src="./images/court-field.png"
-                class="card-img-top mt-3"
-                style="width: 18rem"
-                alt="..."
-              />
-              <div class="card-body">
-                <h2 class="card-title">COURT 1</h2>
-                <p class="card-text"></p>
-                <a href="booking" class="btn btn-primary">BOOK</a>
+          >
+            <section class="col futsal-court">
+              <div class="card ps-5">
+                <img
+                  src="./images/court-field.png"
+                  class="card-img-top mt-3"
+                  style="width: 18rem"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h2 class="card-title">COURT 1</h2>
+                  <p class="card-text"></p>
+                  <a href="booking/" class="btn btn-primary">BOOK</a>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </main>
     </div>

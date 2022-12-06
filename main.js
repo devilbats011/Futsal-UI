@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function main() {
   const futsalCourtEl = document.querySelector(".futsal-court");
 
-  for (let index = 4; index > 0; index--) {
+  for (let index = 5; index > 0; index--) {
     //Clone Courts
     const futsalCourtElClone = futsalCourtEl.cloneNode(true);
     // let futsalCourtTextEL = futsalCourtElClone;
