@@ -8,19 +8,19 @@
     <title>Futsal</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light vh-25">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-light vh-25" >
       <!-- style="height: 8vh; -->
       <div class="container-fluid mx-3  ">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Futsal Admin</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           </ul> -->
-          <ul class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="d-flex d-lg-none navbar-nav ms-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Booking</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -44,12 +44,12 @@
         </div>
       </div>
     </nav>
-    <main class="d-flex flex-nowrap" style="height: 93vh;min-height:440px">
+    <main class="d-flex flex-nowrap" style="height: 94vh;min-height:440px">
       <h1 class="visually-hidden">Sidebars examples</h1>
 
       <div
-        class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
-        style="width: 280px"
+        class="d-lg-flex d-none flex-column flex-grow-1 flex-shrink-1 p-3 text-bg-dark"
+        style="width:280px;"
       >
         <a
           href="/"
@@ -58,7 +58,7 @@
           <svg class="bi pe-none me-2" width="40" height="32">
             <use xlink:href="#bootstrap"></use>
           </svg>
-          <span class="fs-4">Sidebar</span>
+          <span class="fs-4">Dashboard</span>
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
@@ -67,7 +67,7 @@
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home"></use>
               </svg>
-              Home
+              Booking
             </a>
           </li>
           <li>
@@ -86,22 +86,7 @@
               Orders
             </a>
           </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#grid"></use>
-              </svg>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#people-circle"></use>
-              </svg>
-              Customers
-            </a>
-          </li>
+     
         </ul>
         <hr />
         <div class="dropdown">
@@ -128,6 +113,63 @@
             <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
         </div>
+      </div>
+      <div class="w-100 p-3">
+        <article class="jumbotron jumbotron-fluid">
+          <div class="container-lg">
+            <h1 class="display-4">Booking</h1>
+            <p class="lead">Filter Date : Tuesday,22/22/22 +</p>
+          </div>
+        </article>
+        <section class="p-2 rounded table-responsive " >
+          <table class="table table-hover table-sm border" style="min-width: 500px;" >
+            <!-- " -->
+            <thead class="bg-light">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">No Phone</th>
+                <th scope="col">Time</th>
+                <th scope="col">Booked</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0</th>
+                <td>Mark</td>
+                <td>01234567890</td>
+                <td>11.00am-12.00am</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>01234567890</td>
+                <td>11.00am-12.00am</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>01234567890</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <!-- <tr class="bg-secondary text-light"> -->
+              <tr style="user-select: none;">
+                <th scope="row" >3</th>
+                <!-- <td colspan="2"  >Larry the Bird</td> -->
+    
+                <td class=""><del>Larry the Bird </del></td>
+                <td class=""><del>01234567890 </del></td>
+                <td class=""><del>twitter </del></td>
+                <td class=""><del>twitter </del></td>
+                <!-- <td>@twitter</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
       </div>
     </main>
     <script type="module" src="/admin/main.js"></script>
